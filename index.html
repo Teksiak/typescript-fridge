@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/style.css">
+    <script src="./node_modules/tinymce/tinymce.min.js" referrerpolicy="origin"></script>
+    <title>Lodówka</title>
+</head>
+<body>
+    <div class="login">
+        <label for="name">Name</label>
+        <input type="text" id="name" required>
+        <button id="send">Show</button>
+    </div>
+    <div class="main" style="display: none;">
+        <button class="add_magnet">
+            <img src="./public/svg/file-earmark-plus-fill.svg" alt="add_magnet">
+        </button>
+        <div class="fridge">
+
+        </div>
+        <div class="counters">
+            <p class="current_counter">Na lodówce: 0</p>
+            <p class="alltime_counter">Przebieg: 0</p>
+        </div>
+
+    </div>
+    <div class="editor-display">
+        <textarea id="editor">Hello, World!</textarea>
+    </div>
+
+    <script src="./public/bundle.js" type="module"></script>
+</body>
+</html>

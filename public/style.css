@@ -1,0 +1,208 @@
+* {margin: 0px; padding: 0px; box-sizing: border-box; font-family: Helvetica, Arial, sans-serif;}
+
+div.login {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.login label {
+    margin-left: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 5px;
+    font-size: 10px;
+    color:rgba(0, 0, 0, 0.5)
+}
+
+div.login input {
+    width: 150px;
+    height: 25px;;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 5px;
+    box-shadow: inset 1px 1px 3px rgba(16, 24, 32, .2);
+    outline: none;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 12px;
+    text-align: center;
+}
+div.login button {
+    width: 50px;
+    margin-top: 5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 8px;
+    font-size: 10px;
+    padding: 5px;
+    box-shadow: 1px 1px 4px rgba(16, 24, 32, .5);
+    color: rgba(16, 24, 32, .8);
+    transform: scale(1.01);
+    transition: .2s transform;
+}
+div.login button:hover {
+    transform: scale(1.03);
+}
+
+div.main {
+    padding: 10px;
+    position: relative;
+}
+
+div.fridge {
+    position: relative;
+    margin-top: 5px;
+}
+
+button.add_magnet {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #eee;
+    border-radius: 8px;
+    font-size: 10px;
+    padding: 5px;
+    box-shadow: 1px 1px 4px rgba(16, 24, 32, 0.5);
+    transform: scale(1.01);
+    transition: .2s transform;
+}
+button.add_magnet:hover {
+    transform: scale(1.03);
+}
+
+div.counters {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.4);
+    letter-spacing: 1px;
+}
+
+div.magnet {
+    display: flex;
+    position: absolute;
+    background-color: #101820FF;
+    color: #eee;
+    border-radius: 8px;
+    font-size: 10px;
+    padding: 5px;
+    border: 1px solid #eee;
+    box-shadow: 1px 1px 4px rgba(16, 24, 32, .5);
+    transition: .3s box-shadow;
+    cursor:move;
+    overflow: hidden;
+}
+
+div.magnet:hover {
+    box-shadow: 1px 1px 5px rgba(16, 24, 32, 1);
+}
+
+div.magnet > div {
+    width: 100%;
+    padding-right: 8px;
+    margin-top: 10px;
+    margin-left: -1px;
+    color: #eee;
+    font-size: 8px;
+    word-wrap: break-word;
+}
+
+button.text_button {
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    width: 14px;
+    height: 14px;
+    background-color: transparent;
+    border: none;
+    background-image: url(svg/pencil-square.svg);
+    cursor: pointer;
+    transition: .2s filter;
+}
+
+button.remove_button {
+    position: absolute;
+    right: 0px;
+    top: 2px;
+    width: 14px;
+    height: 14px;
+    background-color: transparent;
+    border: none;
+    background-image: url(svg/x-circle.svg);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: .2s filter;
+}
+
+button.resize_button {
+    position: absolute;
+    right: 1px;
+    bottom: 1px;
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    border: none;
+    background-image: url(svg/arrow.svg);
+    background-repeat: no-repeat;
+    cursor: nwse-resize;
+    transition: .2s filter;
+}
+
+button.text_button:hover, button.remove_button:hover, button.resize_button:hover {
+    filter:drop-shadow(0px 0px 1px white);
+}
+
+button#save_button { 
+    width: 16px;
+    height: 16px;
+    margin-top: 3px;
+    background-image: url(svg/download.svg);
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+button#cancel_button {
+    width: 16px;
+    height: 16px;
+    margin-top: 3px;
+    margin-left: 8px;
+    background-image: url(svg/x-lg.svg);
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+textarea#editor {
+    display: none;
+}
+
+div.tox-tinymce {
+    width: 50%;
+    margin: auto;
+    margin-top: 10%;
+}
+
+div.tox-promotion {
+    display: none;
+}
+
+span.tox-statusbar__branding {
+    display: none;
+}
+div.tox {
+    z-index: 1000001;
+}
+div.editor-display {
+    display: none;
+    top: 0px;
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    z-index: 1000001;
+}
